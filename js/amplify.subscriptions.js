@@ -3,7 +3,6 @@ var $_new = $( "#new" );
 amplify.subscribe( "initTasks", function() {
   var store = amplify.store( "tasks" );
   if ( !store || store.tasks.length === 0 ) {
-    amplify.store( "tasks", null );
     amplify.store( "tasks", { tasks: [] } );
     amplify.request( "loadTasks", function( data ) {
       for (var i=0; i < data.tasks.length; i++) {
