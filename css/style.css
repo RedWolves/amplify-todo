@@ -1,0 +1,9 @@
+@import "reset.css";
+
+body {
+  margin: 20px;
+}
+
+#new {
+  display: none;
+}
